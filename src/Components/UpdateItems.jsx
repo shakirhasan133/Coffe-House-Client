@@ -37,7 +37,7 @@ const UpdateItems = () => {
       photo,
     };
 
-    fetch(`http://localhost:5000/edit-item/${id}`, {
+    fetch(`https://coffeehousebackend-kzmnpso7.b4a.run/edit-item/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

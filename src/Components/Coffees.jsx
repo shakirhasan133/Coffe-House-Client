@@ -8,7 +8,7 @@ const Coffees = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://coffeehousebackend-kzmnpso7.b4a.run/products")
       .then((res) => res.json())
       .then((data) => setCoffeeItem(data));
   }, []);
@@ -30,7 +30,7 @@ const Coffees = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://coffeehousebackend-kzmnpso7.b4a.run/delete/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

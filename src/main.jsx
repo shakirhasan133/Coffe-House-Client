@@ -23,13 +23,17 @@ const router = createBrowserRouter([
     path: "/edit-item/:id",
     element: <UpdateItems></UpdateItems>,
     loader: ({ params }) =>
-      fetch(`http://localhost:5000/edit-item/${params.id}`),
+      fetch(
+        `https://coffeehousebackend-kzmnpso7.b4a.run/edit-item/${params.id}`
+      ),
   },
   {
     path: "/product-details/:id",
     element: <ProductDetails></ProductDetails>,
     loader: ({ params }) =>
-      fetch(`http://localhost:5000/edit-item/${params.id}`),
+      fetch(
+        `https://coffeehousebackend-kzmnpso7.b4a.run/edit-item/${params.id}`
+      ),
   },
 ]);
 
