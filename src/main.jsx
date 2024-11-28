@@ -8,11 +8,13 @@ import OurProdutcs from "./Components/OurProducts.jsx";
 import Coffees from "./Components/Coffees.jsx";
 import UpdateItems from "./Components/UpdateItems.jsx";
 import ProductDetails from "./Components/ProductDetails.jsx";
+import PageNotFound from "./Components/PageNotFound.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <PageNotFound></PageNotFound>,
   },
 
   {
